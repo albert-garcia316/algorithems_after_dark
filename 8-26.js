@@ -11,6 +11,7 @@ function peakBusiness (logs) {
         if(logs[i].type == "enter"){
             count += logs[i].count;
             if(count > maxCount){
+                maxCount = count;
                 start = logs[i].timestamp;
                 end = 0;
             }
